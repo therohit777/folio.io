@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@500&family=Bigelow+Rules&family=Montserrat:wght@500&family=Open+Sans&family=Syne:wght@700&family=Ubuntu:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@500&family=Bigelow+Rules&family=Montserrat:wght@500&family=Open+Sans&family=Poppins:wght@600&family=Syne:wght@700&family=Ubuntu:wght@500&display=swap');
+.Navbar{
+    width: 100%;
+    height: 60px;
+    background-color:#242338 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: height 1s;
+}
+.header{
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 600;
+    padding:14px 0;
+}
+ul{
+    display: flex;
+    width: 35%;
+    justify-content: space-evenly;
+}
+ul li{
+    list-style: none;
+}
+ul li a{
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+    font-family: 'Barlow', sans-serif;
+    padding: 3px;
+    font-weight: 600;
+    transition: 0.05s ease;
+    font-size: 15px;
+}
+ul li a:hover{
+    color: hsl(7, 96%, 61%);
+}
+.cvbutton{
+    padding:12px 34px;
+    cursor: pointer;
+    font-family: 'Barlow', sans-serif;
+    border: none;
+    background-color: hsl(7, 96%, 61%);
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+    margin-left: 10px;
+    border-radius: 25px;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.menu{
+    font-size: 40px;
+    color: hsl(0, 0%, 100%);
+    display: none;
+    cursor: pointer;
+}
+.close{
+    font-size: 30px;
+    color: hsl(0, 0%, 100%);
+    display: none;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width:1000px){
+    .header{
+        margin-left: 28px;
+        padding: 14px 0 14px 0 ;
+    }
+    .Navbar{
+        flex-direction: column;
+        align-items: flex-start;
+        position: relative;
+    }
+    ul{
+        flex-direction: column ;
+        padding: 0 0 0 30px; 
+        display: none;
+        margin-top: 0;
+    }
+    ul li{
+        margin-top: 10px;
+    }
+    ul li a{
+        padding-left: 0;align-items: flex-start;
+    }
+    .cvbutton{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 20px;
+        display:none;
+    }
+    .menu{
+        display: block;
+        position: absolute;
+        top: 10px;
+        margin-left: 90%;
+    }
+    .close{
+        /* display: block; */
+        position: absolute;
+        top: 20px;
+        margin-left: 90%;
+    }
+    .showup{
+        display: block;
+    }
+    .hide{
+        display:none;
+    }
+    .navheight{
+        height: 350px;
+    }
+}
