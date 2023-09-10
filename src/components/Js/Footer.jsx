@@ -9,10 +9,10 @@ const Footer = () => {
        <div className='socialbox'>
         <span className="socialheader">Connect with me:</span>
         <div className="socials">
-            <FaLinkedinIn className='socialicons'/>
-            <FaInstagram className='socialicons'/>
-            <FaGithub className='socialicons'/>
-            <FaTwitter className='socialicons'/>
+            <a href="https://www.linkedin.com/in/rohitpandey777/" target='_blank' rel="noreferrer"><FaLinkedinIn className='socialicons'/></a>
+            <a href="https://www.instagram.com/rohitpande77/" target='_blank' rel="noreferrer"><FaInstagram className='socialicons'/></a>
+            <a href="https://github.com/therohit777" target='_blank' rel="noreferrer"><FaGithub className='socialicons'/></a>
+            <a href="https://twitter.com/rohit_dev7" target='_blank' rel="noreferrer"><FaTwitter className='socialicons'/></a>
         </div>
        </div>
     </div>
