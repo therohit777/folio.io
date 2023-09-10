@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@500&family=Bigelow+Rules&family=Montserrat:wght@500&family=Open+Sans&family=Syne:wght@700&family=Ubuntu:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@500&family=Bigelow+Rules&family=Montserrat:wght@500&family=Open+Sans&family=Poppins:wght@600&family=Syne:wght@700&family=Ubuntu:wght@500&display=swap');
+.HeroSection{
+    width:100%;
+    background: #e3b200;
+    padding: 30px 0;
+    min-height: 100vh;
+    margin-top: 0;
+    z-index: -1;
+}
+.innercont{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.hero{
+    width: 380px;
+    border-radius: 20px;
+    margin: 40px 60px;
+    box-shadow: rgba(0, 0, 0, 0.795) 0px 5px 15px;
+    border: 10px solid #fff;
+}
+.heroimg{
+    position: relative;
+    z-index: 0;
+    margin-left: 60px;
+}
+.info1{
+    position: absolute;
+    width: 150px;
+    margin-top: 80px;
+    background-color: #fff;
+    padding: 15px 20px 20px 20px;
+    display: flex;
+    border-radius: 20px;
+    font-family: 'Barlow', sans-serif;
+    box-shadow: rgba(0, 0, 0, 0.196) 0px 5px 15px;
+}
+.subimg1{
+    margin: 0;
+    padding: 0;
+    font-size: 55px;
+    color:#f9af04
+}
+.subimg2{
+    padding-top:13px;
+    padding-left: 10px;
+    font-weight: 600;
+    color: #000;
+    font-size: 18px;
+}
+.info3{
+    position: absolute;
+    width: 150px;
+    margin-top: 390px;
+    background-color: #fff;
+    padding: 15px 20px 20px 20px;
+    display: flex;
+    border-radius: 20px;
+    font-family: 'Barlow', sans-serif;
+    margin-left: 340px;
+    box-shadow: rgba(0, 0, 0, 0.196) 0px 5px 15px;
+}
+.subimgcol{
+    color: orangered;
+}
+.info2{
+    position: absolute;
+    padding: 20px;
+    margin-top:0;
+    background-color: #fff;
+    display: flex;
+    border-radius: 20px;
+    font-family: 'Barlow', sans-serif;
+    margin-left: 370px;
+    box-shadow: rgba(0, 0, 0, 0.262) 0px 5px 15px;
+}
+.check{
+    width: 80px;
+}
+
+.intro1{
+    font-family: 'Barlow', sans-serif;
+    color: #fff;
+    font-size: 28px;
+    margin-top: 100px;
+}
+.intro2{
+    font-family: 'Barlow', sans-serif;
+    color: #fff;
+    font-weight: 600;
+    font-size: 70px;
+    margin: 10px 0;
+}
+.intro3{
+    font-family: 'Barlow', sans-serif;
+    color: #fff;
+    font-size: 28px;
+}
+.subintro{
+    color: white;
+    width: 450px;
+    margin-top: 30px;
+    font-size: 20px;
+}
+.herobtn{
+    display: flex;
+}
+.herobtn a{
+    color: #fff;
+    text-decoration: none;
+    margin-top: 24px;
+    font-weight: 600;
+}
+.Quote{
+    background-color: orangered;
+    padding: 12px 25px;
+    font-size: 20px;
+    border-radius: 5px;
+    margin-right: 40px;
+}
+.aboutme{
+    background-color: #242338;
+    padding: 12px 35px;
+    font-size: 20px;
+    border-radius: 5px;
+    margin-right: 40px;
+}
+
+@media screen and (max-width:1060px){
+    .HeroSection{
+        min-height: 60vh;
+    }
+    .innercont{
+        flex-direction:column-reverse ;
+        align-items: center;
+    }
+    .subintro{
+        width: 400px;
+    }
+    .heroimg{
+        margin-left: 0;
+    }
+    .intro1{
+        margin-top: 50px;
+    }
+    .Quote{
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width:560px){
+    .innercont{
+        width: 100%;
+    }
+    .heroimg{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .hero{
+        width: 80%;
+    }
+    .info1{
+        display: none;
+    }
+    .info2{
+        display: none;
+    }
+    .info3{
+        display: none;
+    }
+    .herotext{
+        width: 100%;
+    }
+    .intro1{
+        font-size: 6vw;
+        margin-left: 10%;
+        margin-top: 30px;
+    }
+    .intro2{
+        font-size: 13vw;
+        margin-left: 10%;
+    }
+    .intro3{
+        font-size: 6vw;
+        margin-left: 10%;
+    }
+    .subintro{
+        width: 80%;
+        font-size: 4vw;
+        margin-left: 10%;
+    }
+    .Quote{
+        font-size:4vw ;
+        margin-left: 10%;
+        padding: 3vw 4vw;
+        margin-right: 10px;
+    }
+    .aboutme{
+        font-size: 4vw;
+        padding: 3vw 6vw;
+    }   
+}
