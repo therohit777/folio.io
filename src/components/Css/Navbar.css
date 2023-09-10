@@ -26,11 +26,11 @@
     font-size: 28px;
     font-weight: 650;
     padding:14px 0;
-    margin-right: 160px;
+    margin-right: 195px;
 }
 ul{
     display: flex;
-    width: 30%;
+    width: 400px;
     justify-content: space-evenly;
     margin-left: 40px;
 }
@@ -47,7 +47,7 @@ ul li a{
     font-size: 17.5px;
 }
 ul li a:hover{
-    color: #000;
+    color: orangered;
 }
 .cvbutton{
     padding:14px 30px;
@@ -87,8 +87,8 @@ ul li a:hover{
         padding: 14px 0 14px 0 ;
     }
     .Navbar{
-        position: relative;
-        background-color:#242338 ;
+        /* position: relative; */
+        /* background-color:#242338 ; */
     }
     .navbar{
         flex-direction: column;
