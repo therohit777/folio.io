@@ -34,3 +34,21 @@
     font-size: 16px;
     font-weight: 100;
 }
+@media screen and (max-width:480px){
+    .Testimg:hover{
+        width: 300px;
+    } 
+}
+
+@media screen and (max-width:415px){
+    .Testimg{
+        width: 40%;
+    }
+    .Testimg:hover{
+        width: 60%;
+    } 
+    .testimonial{
+        font-size: 14px;
+        width: 80%;
+    }
+}

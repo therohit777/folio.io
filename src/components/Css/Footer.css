@@ -32,9 +32,9 @@
     font-size: 18.5px;
     margin-left: 5px;
     transform: translate(0,0px);
+    transition: transform 2s ease-in-out;
 }
 .socialicons:hover{
-    transition: transform 0.2s ease-in-out;
     transform: translate(0,10px);
 }
 

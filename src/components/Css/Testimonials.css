@@ -46,3 +46,12 @@
     margin-right: auto;
   }
   
+  @media screen and (max-width:400px){
+    .testheader{
+      font-size: 35px;
+    }
+    .testsay{
+      font-size: 12px;
+      width: 60%;
+    }
+  }
