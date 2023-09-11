@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@500&family=Bigelow+Rules&family=Montserrat:wght@500&family=Open+Sans&family=Syne:wght@700&family=Ubuntu:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@500&family=Bigelow+Rules&family=Montserrat:wght@500&family=Open+Sans&family=Poppins:wght@600&family=Syne:wght@700&family=Ubuntu:wght@500&display=swap');
+.Testimonials{
+  width: 100%;
+  font-family: 'Barlow', sans-serif;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.testheader{
+  color: #fff;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+  padding-top: 80px;
+}
+.testsay{
+  color: #dedbdb;
+  font-size: 15px;
+  font-style: italic;
+  text-align: center;
+  width: 280px;
+  display: flex;
+  margin-top: 12px;
+  justify-content: center;
+}
+.swiper {
+    width: 100%;
+    background: #242338;
+    margin-bottom: 100px;
+    padding: 30px 0 60px 0;
+}
+  
+ .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #242338;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+ }
+  .swiper {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
