@@ -1,4 +1,5 @@
 import './App.css';
+// import About from './components/Js/About';
 import Footer from './components/Js/Footer';
 import Herosection from './components/Js/Herosection';
 import Navbar from './components/Js/Navbar';
@@ -10,7 +11,7 @@ function App() {
     <div className="App">
       <Navbar/>
       <Herosection/>
-      {/* <Project/> */}
+      {/* <About/> */}
       <Testimonials/>
       <Footer/>
     </div>

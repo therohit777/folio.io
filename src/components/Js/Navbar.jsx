@@ -14,6 +14,8 @@ const Navbar = () => {
   };
   window.addEventListener("scroll", changeNavbarColor);
 
+  const [contactbox, setcontactbox] = useState(false);
+
   return (
     <div className={hidmenu ? "Navbar" : "Navbar navheight"}>
       <div className={colorChange ? "navbar colorChange" : "navbar"}>
@@ -31,13 +33,13 @@ const Navbar = () => {
             <a href="#portfolio">Portfolio</a>
           </li>
           <li>
-            <a href="#skills">Skills</a>
-          </li>
-          <li>
-            <a href="#contact">Contact</a>
+            <a href="#contact" onClick={()=>setcontactbox(true)}>Contact</a>
           </li>
           <li>
             <a href="#blog">Blog</a>
+          </li>
+          <li>
+            <a href="#testimonials">Testimonials</a>
           </li>
         </ul>
         <a
@@ -56,6 +58,21 @@ const Navbar = () => {
           className={hidmenu ? "close" : "close showup"}
           onClick={() => sethidmenu(true)}
         />
+      </div>
+      
+      
+      <div className={(contactbox)?"contactbox":"contactbox contacthide"}>
+        <div className="closecontact">
+          <FiXSquare className="contactclosebtn" onClick={()=>setcontactbox(false)}/>
+        </div>
+        <div className="quotebox">
+          <div className="headerquote">Don't be shy</div>
+          <div className="subheaderquote">Drop Me a Line</div>
+          <input type="text" className="contacttxt" placeholder="name"/>
+          <input type="email" className="contacttxt" placeholder="email"/>
+          <textarea  cols="30" rows="6" placeholder="message" className="contactmessage"></textarea>
+          <button className="contactsendbtn">send</button>
+        </div>
       </div>
     </div>
   );

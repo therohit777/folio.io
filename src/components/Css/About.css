@@ -1,0 +1,26 @@
+.About{
+    width: 100%;
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.aboutimgbox{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 700px;
+    align-items: center;
+}
+.aboutimg{
+    width: 500px;
+    position: absolute;
+    z-index: 100px;
+    top: 80px;
+    left: 100px;
+}
+.aboutborders{
+    border: 20px solid #e3b200;
+    width: 500px;
+    height: 350px;
+}

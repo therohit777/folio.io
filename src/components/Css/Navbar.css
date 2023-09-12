@@ -80,20 +80,112 @@ ul li a:hover{
     cursor: pointer;
 }
 
+.contactbox{
+    background: #ffffffce;
+    position: absolute;
+    top:0;
+    height: 100vh;
+    width: 100%;
+    z-index: 20000px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+.contactclosebtn{
+    font-size: 40px;
+    color: #fff;
+    background: red;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-right: 60px;
+    margin-top: 60px;
+}
+.closecontact{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.contactitem{
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+    font-family: 'Barlow', sans-serif;
+    padding: 5px;
+    font-weight: 600;
+    transition: 0.05s ease;
+    font-size: 17.5px;
+    cursor: pointer;
+}
+.contactitem:hover{
+    color: orangered;
+}
+.quotebox{
+    width: 300px;
+    height: 400px;
+    background-color: #242338;
+    margin-top: 50px;
+    border-radius: 30px;
+    padding: 50px 40px;
+    box-shadow: rgba(0, 0, 0, 0.764) 0px 5px 15px;
+}
+.contacthide{
+    display: none;
+}
+.headerquote{
+    font-family: 'Barlow', sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    color: orangered;
+    margin-bottom: 10px;
+}
+.subheaderquote{
+    font-family: 'Barlow', sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 30px;
+}
+.contacttxt{
+    width: 273px;
+    padding: 12.5px 10px;
+    margin-bottom: 8px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: none;
+}
+.contactmessage{
+    font-size: 16px;
+    padding: 10px;
+    width: 270px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.contactsendbtn{
+    width: 295px;
+    font-size: 18px;
+    padding: 12px 10px;
+    text-align: center;
+    border-radius: 10px;
+    border: none;
+    background-color: orangered;
+    color: #fff;
+    font-weight: 700;
+}
+
+
+
 
 @media screen and (max-width:1060px){
     .header{
         margin-left: 28px;
         padding: 14px 0 14px 0 ;
     }
-    .Navbar{
-        /* position: relative; */
-        /* background-color:#242338 ; */
-    }
     .navbar{
         flex-direction: column;
         align-items: flex-start;
         padding-top: 0;
+        width: 100%;
     }
     ul{
         flex-direction: column ;
@@ -101,9 +193,11 @@ ul li a:hover{
         display: none;
         margin-top: 0;
         margin-left: 0;
+        width: 80%;
     }
     ul li{
         margin-top: 10px;
+        width: 100%;
     }
     ul li a{
         padding-left: 0;
@@ -122,6 +216,9 @@ ul li a:hover{
         margin-left: 90%;
         font-size: 40px;
     }
+    .quotebox{
+        margin-top: 20vh;
+    }
     .close{
         /* display: block; */
         position: absolute;
@@ -139,6 +236,7 @@ ul li a:hover{
     }
 }
 @media screen and (max-width:490px) {
+
     .menu{
         margin-left: 80%;
     }
@@ -148,4 +246,38 @@ ul li a:hover{
     .navheight{
         height: 400px;
     }
+    .contactclosebtn{
+        margin-right: 5%;
+    }
+}
+
+
+@media screen and (max-width:420px){
+    .quotebox{
+        width: 90%;
+        padding: 50px 0;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .contacttxt{
+        width: 80%;
+    }
+    .contactmessage{
+        width: 80%;
+    }
+    .contactsendbtn{
+        width: 86%;
+    }
+    .headerquote{
+        font-size: 5.8vw;
+        width: 84%;
+        text-align: start;
+    }
+    .subheaderquote{
+        font-size: 11vw;
+        width: 84%;
+        text-align: start;
+    }
+    
 }
