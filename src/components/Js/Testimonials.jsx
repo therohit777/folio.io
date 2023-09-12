@@ -39,7 +39,7 @@ const Testimonials = () => {
       <Swiper
         slidesPerView={1}
         spaceBetween={30}
-        // loop={true}
+        loop={true}
         autoplay={{
             delay: 2500,
             disableOnInteraction: true,
