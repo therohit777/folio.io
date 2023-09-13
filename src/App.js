@@ -8,7 +8,7 @@ import Testimonials from './components/Js/Testimonials';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" id="home">
       <Navbar/>
       <Herosection/>
       {/* <About/> */}

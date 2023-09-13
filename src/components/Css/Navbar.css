@@ -173,6 +173,17 @@ ul li a:hover{
     font-weight: 700;
 }
 
+.messagesentinfo{
+    font-family: 'Barlow', sans-serif;
+    font-size: 15px;
+    color: #05c305;
+    text-align: center;
+    margin-top: 5px;
+}
+.messagesentinfohid{
+    display: none;
+}
+
 
 
 
