@@ -48,7 +48,7 @@
   
   @media screen and (max-width:400px){
     .testheader{
-      font-size: 35px;
+      font-size: 12vw;
     }
     .testsay{
       font-size: 12px;

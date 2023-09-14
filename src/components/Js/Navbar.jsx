@@ -33,8 +33,6 @@ const Navbar = () => {
     setmessagesent(true);
   };
 
-  
-
 
   return (
     <div className={hidmenu ? "Navbar" : "Navbar navheight"}>
