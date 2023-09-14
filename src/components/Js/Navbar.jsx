@@ -53,9 +53,9 @@ const Navbar = () => {
           <li>
             <a href="#contact" onClick={()=>setcontactbox(true)}>Contact</a>
           </li>
-          <li>
+          {/* <li>
             <a href="#blog">Blog</a>
-          </li>
+          </li> */}
           <li>
             <a href="#testimonials">Testimonials</a>
           </li>
