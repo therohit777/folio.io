@@ -1,5 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@500&family=Bigelow+Rules&family=Montserrat:wght@500&family=Open+Sans&family=Syne:wght@700&family=Ubuntu:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@500&family=Bigelow+Rules&family=Montserrat:wght@500&family=Open+Sans&family=Poppins:wght@600&family=Syne:wght@700&family=Ubuntu:wght@500&display=swap');
 .Projects{
-    min-height: 100vh;
     width: 100%;
     background: #242338;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 0 180px 0;
+}
+.projectheader{
+    width: 100%;
+    text-align: center;
+    padding: 2px 0;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-weight: 700;
+    color: #fff;
+    font-family: 'Barlow', sans-serif;
+}
+.projectsubline{
+    color: rgb(189, 185, 185);
+}
+.projectscont{
+    display: flex;
+    width: 700px;
+    padding: 50px;
+    background-color: #fff;
+    margin-top: 60px;
+    border-radius: 100px;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 50px;
+    flex-wrap: wrap;
+    border:25px solid rgb(2 94 138 / 12%);
+    box-shadow: inset 0px 0px 10px rgba(0,0,0,0.5);
+}
+.projects{
+    width: 300px;
+    box-shadow: rgba(0, 0, 0, 0.458) 0px 5px 15px;
+    border-radius: 20px;
+    margin: 10px;
+    transition: width 0.2s ease-in;
+    cursor: pointer;
+}
+.projects:hover{
+    box-shadow: rgba(9, 9, 9, 0.945) 0px 5px 15px;
+}
+.projectbtn{
+    color:#fff;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    font-family: 'Barlow', sans-serif;
+    background-color: orangered;
+    text-decoration: none;
+    padding: 20px 60px;
+    margin-top: 40px;
+    border-radius: 20px;
+}
+
+
+@media screen and (max-width: 950px){
+    .Projects{
+        width: 100%;
+    }
+    .projectscont{
+        width: 75%;
+        padding: 50px 0;
+    }
+}
+@media screen and (max-width:510px) {
+    .projectscont{
+        align-items: center;
+        justify-content: center;
+    }
+    .projectscont a{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .projects{
+        width: 80%;
+        /* margin: 0; */
+    }
+}
+
+@media screen and (max-width:400px) {
+    .projectheader{
+        font-size: 12vw;
+    }
+    .projectsubline{
+        font-size: 5vw;
+    }
+    .projectbtn{
+        font-size: 5vw;
+    }
 }

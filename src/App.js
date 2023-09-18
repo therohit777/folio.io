@@ -3,6 +3,7 @@ import About from './components/Js/About';
 import Footer from './components/Js/Footer';
 import Herosection from './components/Js/Herosection';
 import Navbar from './components/Js/Navbar';
+import Project from './components/Js/Project';
 // import Project from './components/Js/Project';
 import Testimonials from './components/Js/Testimonials';
 
@@ -12,6 +13,7 @@ function App() {
       <Navbar/>
       <Herosection/>
       <About/>
+      <Project/>
       <Testimonials/>
       <Footer/>
     </div>
