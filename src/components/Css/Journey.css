@@ -1,0 +1,9 @@
+.Journey{
+    width: 100%;
+    min-height: 100vh;
+}
+.journeyroutebox{
+    width: 600px;
+    height: 100px;
+    border-radius: 50px;
+}

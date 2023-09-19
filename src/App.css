@@ -1,9 +1,13 @@
 .App{
     position: relative;
     background-color: #242338;
+    width: 100%;
 }
 html{
     scroll-behavior: smooth;
+}
+.home{
+    width: 100%;
 }
 
 /* width */
