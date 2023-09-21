@@ -1,9 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@500&family=Bigelow+Rules&family=Montserrat:wght@500&family=Open+Sans&family=Syne:wght@700&family=Ubuntu:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@500&family=Bigelow+Rules&family=Montserrat:wght@500&family=Open+Sans&family=Poppins:wght@600&family=Syne:wght@700&family=Ubuntu:wght@500&display=swap');
 .Journey{
     width: 100%;
     min-height: 100vh;
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-.journeyroutebox{
-    width: 600px;
-    height: 100px;
+.journeyheader{
+    font-size: 55px;
+    font-weight: 700;
+    margin-left: 50px;
+    color: #fff;
+    text-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+    font-family: 'Barlow', sans-serif;
+    text-align: center;
+}
+.journeycont{
+    width: 100%;
+    /* background: #000; */
+    /* background-color: rgb(56, 57, 75); */
+    padding: 100px 0;
+    padding-top: 50px;
     border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.expimg{
+    width: 30px;
+    border-radius: 50px;
+    border: 20px solid #fff;
+    height: 30px;
+    box-shadow: inset 0px 0px 10px rgb(248, 248, 248);
+}
+.exps{
+    width: 600px;
+    background-color: #fff;
+    min-height: 200px;
+    border-radius: 100px;
+    border: 15px solid rgb(2 94 138 / 12%);
+    box-shadow: inset 0px 0px 10px rgba(0,0,0,0.5);
+    padding: 30px 60px;
+    margin-top: 50px;
+}
+.expheader{
+    font-size: 35px;
+    font-weight: 700;
+    font-family: 'Barlow', sans-serif;
+    margin-bottom: 10px;
+}
+.expyear{
+    font-size: 16pxpx;
+    font-weight: 600;
+    color: rgb(171, 171, 171);
+    font-family: 'Barlow', sans-serif;
+    margin-bottom: 20px; 
+}
+.expbody{
+    font-size: 16px;
+    font-weight: 500;
+    color: gray;
+}
+.exprole{
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Barlow', sans-serif;
+}
+.jsubcont{
+    display: flex;
+}
+.jimg{
+    width: 45px;
+    height: 45px;
+    margin-top: 100px;
+    margin-right: 50px;
+    border-radius: 50%;
+    border: 10px solid #ffffff98;
+    box-shadow: 0px 0px 10px rgba(253, 251, 251, 0.377);
+    position: relative;
+    z-index: 2;
+}
+.jline{
+    width: 8px;
+    min-height: 100%;
+    height: 100%;
+    margin-right: 50px;
+    background-color: #ffffff7e;
+    box-shadow: 0px 0px 10px rgba(253, 251, 251, 0.296);
+}
+.jimgcont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    width: 40px;
+}
+
+@media screen and (max-width:950px) {
+    .exps{
+        width: 70%;
+    }
+    .journeycont{
+        padding: 0 10%;
+        width: 80%;
+    }
+}
+@media screen and (max-width:790px) {
+    .exps{
+        width: 65%;
+    }
+}
+@media screen and (max-width:570px) {
+    .exps{
+        text-align: center;
+    }
+    .journeyheader{
+        margin-left: 0;
+    }
+    .expheader{
+        font-size: 7vw;
+    }
+    .exprole{
+        font-size: 3.8vw;
+    }
+    .expyear{
+        font-size: 2.9vw;
+    }
+    .expbody{
+        font-size: 2.6vw;
+    }
+}
+@media screen and (max-width:500px) {
+    .jimg{
+        width: 8vw;
+    }
+    .journeyheader{
+        font-size: 12vw;
+    }
+}
+
+@media screen  and (max-width:350px){
+    .exps{
+        width: 70%;
+        padding: 30px;
+    }
+    .jimgcont{
+        display: none;
+    }
 }
