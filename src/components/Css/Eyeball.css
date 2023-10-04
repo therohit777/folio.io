@@ -1,0 +1,153 @@
+.Eyeballpage{
+    width: 100%;
+    height: 100vh;
+    background-color: #242338;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    
+}
+.aligner {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+    
+.aligner-item {
+   max-width: 50%;
+}
+    
+.clip-circle {
+   height: 200px;
+   width: 400px;
+   max-width:800px;
+   border-radius: 50%;
+   overflow: hidden;
+   margin: 25px auto 0;
+   border-top: 15px inset rgba(255, 255, 255, 0.25);
+}
+    
+    
+.eye {
+    width: 400px;
+    height: 200px;
+    border-radius: 100%;
+    position: relative;
+    overflow: hidden;
+    background: radial-gradient(circle at 50%, #fcfcfc, #efeff1 66%, #eecccc 100%);
+}
+    
+    
+.iris {
+    width: 140px;
+    height: 140px;
+    border-radius: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 10% 30%;
+    animation: move 5s ease-out infinite;
+    background: #81c3fff2;
+    border: 8px solid #43baff;
+}
+    
+.iris:before {
+    content: "";
+    width: 40%;
+    height: 40%;
+    border-radius: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background: black;
+    transform: translate(-50%, -50%);
+}
+    
+.iris:after {
+    content: "";
+    width: 30%;
+    height: 30%;
+    border-radius: 100%;
+    position: absolute;
+    left: 20%;
+    top: 20%;
+    background: rgba(255, 255, 255, 0.2);
+}
+    
+#lid {
+    animation: blink 2.4s infinite;
+    animation-delay: 8s;
+    top: -50px;
+    border-bottom:15px inset #000;
+}
+@keyframes blink {
+
+    90% {
+    transform: none;
+    animation-timing-function: ease-in;
+    }
+    93% {
+    transform: translateY(15px) scaleY(0)
+    }
+    100% {
+    animation-timing-function: ease-out;
+    }
+}
+
+.typewriter {
+    font-family: "Arial", sans-serif;
+    font-size: 22px;
+    border-right: 2px solid #fff;
+    font-weight: 700;
+    white-space: nowrap;
+    text-align: center;
+    overflow: hidden;
+    animation: typing 3s steps(25, end), blink-caret 0.75s step-end infinite;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  @keyframes blink-caret {
+    from,
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: #ffffff;
+    }
+  }
+
+
+  @media screen and (max-width:400px){
+    .clip-circle{
+        width: 90%;
+        height: 50vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+  }
+
+  @media screen and (max-width:290px) {
+    .typewriter{
+        font-size: 6vw;
+        margin-top: 15px;
+    }
+    .eye{
+        width: 100%;
+    }
+    .iris{
+        width: 100px;
+        height: 100px;
+        margin-top: 80px;
+    }
+  }
