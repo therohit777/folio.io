@@ -1,8 +1,16 @@
 import React from 'react';
 import "../../Css/Journey.css";
+import { Link } from 'react-router-dom';
 
 const Journey = () => {
   const companies = [
+    {
+      companyname:'Techchefz',
+      role:'Software Engineer Intern',
+      time:'September 2023 - Present ',
+      description:'Implemented internal LMS, boosting company efficiency by 10% via training and learning platform. Enhanced clients product user experience with Semantic search feature. Utilized Next JS, MERN stack, Redux, Docker, and Elastic Search for tech infrastructure.',
+      logoname:"techchefz"
+    },
     {
       companyname:'Fintricity',
       role:'Software Development Engineer Intern',
@@ -35,7 +43,8 @@ const Journey = () => {
 
   return (
     <div className='Journey'>
-      <div className="journeyheader">My Journey</div>
+      <div className="journeyheader"><p className='headjourney'>My <span className='headjtn'>Journey</span></p><span className='journeybgntxt'>Journey</span></div>
+      <Link to='/home' className='backhome'>Back to home</Link>
       <div className="journeycont">
           {
            companies.map((item, index) => (

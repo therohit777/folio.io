@@ -17,8 +17,7 @@ const Project = () => {
           <a href="https://awesome-elion-e0bc12.netlify.app/" target='_blank' rel="noreferrer" ><img src={project4} alt="none" className='projects'/> </a>
           <a href="https://devstop.netlify.app/" target='_blank' rel="noreferrer" ><img src={project2} alt="none" className='projects'/> </a>
        </div>
-       <Link to="/projects" className='projectbtn'> View all</Link>
-        
+       <Link to="/projects" className='projectbtn'> View all</Link>   
     </div>
   )
 }
