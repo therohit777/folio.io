@@ -61,7 +61,7 @@ const Navbar = () => {
           </li>
         </ul>
         <a
-          href="https://drive.google.com/file/d/1CknZTU_k01x503cj1QQOIDL8oD82Z_D6/view?usp=sharing"
+          href="https://drive.google.com/file/d/1q8qdPu7AcTR9Z4LSDXHQq8Gw__kpDZL7/view"
           target="_blank"
           rel="noreferrer"
           className={hidmenu ? "cvbutton" : "cvbutton showup"}

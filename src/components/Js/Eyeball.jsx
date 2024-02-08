@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import "../Css/Eyeball.css";
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 
 const texts = [
@@ -17,10 +17,10 @@ const Eyeball = () => {
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      navigate('/welcome'); // Navigate to the '/next' page
-    }, 13000); // 10 seconds
+      navigate('/home'); 
+    }, 13000); 
 
-    return () => clearTimeout(timer); // Clear the timer if the component unmounts
+    return () => clearTimeout(timer); 
   }, [navigate]);
 
 
@@ -42,9 +42,9 @@ const Eyeball = () => {
           } else {
             setCurrentTextIndex(0);
           }
-        }, 1000); // Delay before switching to the next text
+        }, 1000); 
       }
-    }, 100); // Typing speed (adjust as needed)
+    }, 100); 
 
     return () => {
       clearInterval(typingInterval);
@@ -58,6 +58,7 @@ const Eyeball = () => {
           </div>
         </div>
         <div className="typewriter">{currentText}</div>
+        <Link to='/home' className='skipbtn'>skip</Link>
     </div>
   )
 }
