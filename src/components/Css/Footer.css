@@ -23,8 +23,7 @@
     margin: 5px;
     color: #fff;
     border-radius: 10px;
-    /* background: #e3b200; */
-    background-color: #6d6971;
+    background: #e3b200;
     box-shadow: rgba(0, 0, 0, 0.795) 0px 5px 15px;
     text-shadow: rgba(0, 0, 0, 0.897) 0px 5px 15px;
     cursor: pointer;
