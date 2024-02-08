@@ -2,7 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@500&family=Bigelow+Rules&family=Montserrat:wght@500&family=Open+Sans&family=Poppins:wght@600&family=Syne:wght@700&family=Ubuntu:wght@500&display=swap');
 .HeroSection{
     width:100%;
-    background: #e3b200;
+    /* background: #e3b200; */
+    /* background: #0063e3; */
+    background: #4700e3;
     padding: 30px 0;
     /* min-height: 100vh; */
     margin-top: 0;

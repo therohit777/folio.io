@@ -12,7 +12,9 @@
     transition: height 1s;
     top:0;
     position:sticky;
-    background: #e3b200;
+    /* background: #e3b200; */
+    /* background: #0063e3; */
+    background: #4700e3;
     z-index: 100;
 }
 .navbar{
