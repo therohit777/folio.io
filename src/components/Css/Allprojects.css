@@ -7,3 +7,38 @@
     align-items: center;
     flex-direction: column;
 }
+
+@media screen and (max-width:490px){
+    .resetsize1{
+        font-size: 2.5rem;
+    }
+    .resetsize2{
+        font-size: 4rem;
+        top: 62px;
+    }
+}
+
+@media screen and (max-width:380px){
+    .resetsize1{
+        font-size: 1.5rem;
+    }
+    .resetsize2{
+        font-size: 2.5rem;
+        top: 35px;
+    }
+}
+
+@media screen and (max-width:240px){
+    .resetsize1{
+        font-size: 1rem;
+        margin-bottom: 25px;
+    }
+    .resetsize2{
+        font-size: 2rem;
+        top: 25px;
+    }
+    .resetprojectsbtn{
+        font-size: 12px;
+        padding: 6px 15px;
+    }
+}
