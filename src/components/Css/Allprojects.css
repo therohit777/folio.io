@@ -7,6 +7,37 @@
     align-items: center;
     flex-direction: column;
 }
+.searchbox{
+    background-color: #fff;
+    width: 380px;
+    padding: 0;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.searchbox input{
+    width: 75%;
+    border: none;
+    font-size: 18px;
+    padding: 18px 20px;
+    border-radius: 8px 0 0 8px;
+}
+.searchbox .searchbtn{
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    border: none;
+    font-size: 20px;
+    background: orangered;
+    color: #fff;
+    padding: 14px 30px;
+    text-align: center;
+    border-radius: 0 8px 8px 0;
+}
+
 
 @media screen and (max-width:490px){
     .resetsize1{
@@ -17,6 +48,8 @@
         top: 62px;
     }
 }
+
+
 
 @media screen and (max-width:380px){
     .resetsize1{
@@ -40,5 +73,20 @@
     .resetprojectsbtn{
         font-size: 12px;
         padding: 6px 15px;
+    }
+}
+
+@media screen and (max-width:440px) {
+    .searchbox{
+        width: 280px;
+    }
+    .searchbox input{
+        padding: 14px 20px;
+    }
+}
+
+@media screen and (max-width:305px) {
+    .searchbox{
+        width: 180px;
     }
 }
