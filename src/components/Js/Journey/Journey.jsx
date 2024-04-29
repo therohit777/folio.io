@@ -6,14 +6,14 @@ const Journey = () => {
   const companies = [
     {
       companyname:'Techchefz',
-      role:'Software Engineer Intern',
+      role:'Software Engineer ',
       time:'September 2023 - Present ',
       description:'Implemented internal LMS, boosting company efficiency by 10% via training and learning platform. Enhanced clients product user experience with Semantic search feature. Utilized Next JS, MERN stack, Redux, Docker, and Elastic Search for tech infrastructure.',
       logoname:"techchefz"
     },
     {
       companyname:'Fintricity',
-      role:'Software Development Engineer Intern',
+      role:'Software Development Engineer',
       time:'November 2022 - May 2023 ',
       description:'Revamped APIs with FastAPI, crafted a draggable React feature, and designed a custom dashboard. Also, utilized React libraries for a graph and Storybook components. Created a Data-Marketplace MVP with TypeScript and used react-axios for data retrieval.',
       logoname:"company1"
